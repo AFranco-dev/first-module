@@ -10,6 +10,7 @@
     'description': "This is the first module",
     'depends': [],
     'data': [
+        'views/hospital_patient_view.xml'
         'views/menu.xml',
     ],
     'demo': [],
