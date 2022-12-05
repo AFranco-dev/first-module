@@ -10,6 +10,7 @@
     'description': "This is the first module",
     'depends': [],
     'data': [
+        'security/ir.model.access.csv',
         'views/hospital_patient_view.xml',
         'views/menu.xml',
     ],
