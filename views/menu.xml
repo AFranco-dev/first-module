@@ -5,13 +5,13 @@
         name="Hospital"
         sequence="0"/>
     <menuitem
-        id="hospital__hospital_patient_menu_bar"
+        id="hospital_hospital_patient_menu_bar"
         name="Patient Details"
         parent="hospital_menu_root"
         sequence="0"/>
     <menuitem
-        id="hospital_menu_root"
+        id="hospital_hospital_patient_menu"
         name="Hospital"
-        parent="hospital__hospital_patient_menu_bar"
+        parent="hospital_hospital_patient_menu_bar"
         sequence="0"/>
 </odoo>
