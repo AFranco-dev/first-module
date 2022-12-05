@@ -3,15 +3,16 @@
     <menuitem
         id="hospital_menu_root"
         name="Hospital"
+        web_icon="om_hospital,static/description/icon.png"
         sequence="0"/>
     <menuitem
         id="hospital_hospital_patient_menu_bar"
-        name="Patient Details"
+        name="Patient"
         parent="hospital_menu_root"
         sequence="0"/>
     <menuitem
         id="hospital_hospital_patient_menu"
-        name="Hospital"
+        name="Patient Details"
         action="hospital_patient_action"
         parent="hospital_hospital_patient_menu_bar"
         sequence="0"/>
