@@ -9,7 +9,9 @@
     'summary': 'Hospital management system',
     'description': "This is the first module",
     'depends': [],
-    'data': [],
+    'data': [
+        'views/menu.xml',
+    ],
     'demo': [],
     'application': True,
     'auto_install': False,
