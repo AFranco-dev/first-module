@@ -6,7 +6,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name" string="Patient Name"/>
+                <field name="name" string="Patient Name" filter_domain="['|',('name', 'ilike', self),('ref','ilike,self)]"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 <field name="ref"/>
