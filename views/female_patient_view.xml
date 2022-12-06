@@ -41,7 +41,7 @@
         </field>
     </record>
     <!-- SEARCH VIEW -->
-    <record id="female_patient_search_view" model="ir.ui.view">
+    <!-- <record id="female_patient_search_view" model="ir.ui.view">
         <field name="name">female.patient.search</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
@@ -62,7 +62,7 @@
                 </group>
             </search>
         </field>
-    </record>
+    </record> -->
     <!-- PATIENT VIEW ACTION -->
     <record id="hospital_female_patient_action" model="ir.actions.act_window">
         <field name="name">Patient Details</field>
