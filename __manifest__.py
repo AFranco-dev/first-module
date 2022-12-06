@@ -8,7 +8,9 @@
     'sequence': -100,
     'summary': 'Hospital management system',
     'description': "This is the first module",
-    'depends': [],
+    'depends': [
+        'mail'
+    ],
     'data': [
         'security/ir.model.access.csv',
         'views/hospital_patient_view.xml',
