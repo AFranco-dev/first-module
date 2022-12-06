@@ -48,7 +48,7 @@
                 <separator/>
                 <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]"/>
                 <separator/>
-                <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]"/>
+                <filter name="filter_age" string="Kids" domain="[('age', '&lt;=', 5)]"/>
                 <group expand="0" string="Group By">
                     <filter string="Gender" name="group_by_gender" context="{'group_by': 'gender'}"/>
                 </group>
