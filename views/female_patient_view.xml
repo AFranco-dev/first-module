@@ -2,7 +2,7 @@
 <odoo>
     <!-- tree view -->
     <record id="hospital_patient_tree_view" model="ir.ui.view">
-        <field name="name">hospital.patient.tree</field>
+        <field name="name">female.patient.tree</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <tree>
@@ -15,7 +15,7 @@
     </record>
     <!-- form view -->
     <record id="hospital_patient_form_view" model="ir.ui.view">
-        <field name="name">hospital.patient.form</field>
+        <field name="name">female.patient.form</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
@@ -31,18 +31,18 @@
                            <field name="ref"/>
                         </group>
                     </group>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" groups="base.group_user"/>
-                        <field name="activity_ids"/>
-                        <field name="message_ids"/>
-                    </div>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>
     <!-- SEARCH VIEW -->
     <record id="hospital_patient_search_view" model="ir.ui.view">
-        <field name="name">hospital.patient.search</field>
+        <field name="name">female.patient.search</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <search>
