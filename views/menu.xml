@@ -16,4 +16,10 @@
         action="hospital_patient_action"
         parent="hospital_hospital_patient_menu_bar"
         sequence="0"/>
+    <menuitem
+        id="hospital_hospital_patient_female_menu"
+        name="Female Patients Details"
+        action="hospital_female_patient_action"
+        parent="hospital_hospital_patient_menu_bar"
+        sequence="0"/>
 </odoo>
