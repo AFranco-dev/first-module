@@ -8,3 +8,4 @@ class HospitalPatient(models.Model):
     name = fields.Char(string='Name')
     age = fields.Integer(string='Age')
     gender = fields.Selection([('male','Male'),('female','Female')], string="Gender")
+    ref = fields.Char(string='Reference')
