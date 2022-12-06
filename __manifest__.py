@@ -8,7 +8,7 @@
     'summary': 'Hospital management system',
     'description': "This is the first module",
     'depends': [
-        'mail'
+        'mail',
     ],
     'data': [
         'security/ir.model.access.csv',
