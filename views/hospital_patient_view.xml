@@ -6,7 +6,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name" string="Patient Name" filter_domain="['|',('name', 'ilike', self),('ref','ilike,self)]"/>
+                <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
                 <field name="gender" string="Gender"/>
                 <field name="ref"/>
@@ -20,15 +20,15 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                     <group>
-                        <field name="name"/>
-                        <field name="age"/>
-                     <group>
-                     </group>
-                     <group>
-                        <field name="gender"/>
-                        <field name="ref"/>
-                     </group>
+                    <group>
+                        <group>
+                           <field name="name"/>
+                           <field name="age"/>
+                        </group>
+                        <group>
+                           <field name="gender"/>
+                           <field name="ref"/>
+                        </group>
                     </group>
                 </sheet>
             </form>
@@ -40,7 +40,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <search>
-                <field name="name" string="Patient Name"/>
+                <field name="name" string="Patient Name"  filter_domain="['|',('name', 'ilike', self),('ref','ilike,self)]"/>
                 <field name="ref"/>
             </search>
         </field>
