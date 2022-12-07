@@ -7,12 +7,14 @@ class HospitalPatient(models.Model):
     _name = 'hospital.patient'
     _description = 'Hospital Patient'
     _inherit = ['mail.thread', 'mail.activity.mixin']
+
     name = fields.Char(string='Name', tracking=True)
     age = fields.Integer(string='Age', compute='_compute_age', tracking=True)
     gender = fields.Selection([('male','Male'),('female','Female')], string="Gender", tracking=True)
     ref = fields.Char(string='Reference')
     active = fields.Boolean(string='Active', default=True)
     date_of_birth = fields.Date(string="Date Of Birth")
+    appointment = fields.Many2one(comodel_name='hospital.appointment', string="Appointment")
 
     @api.depends('date_of_birth')
     def _compute_age(self):

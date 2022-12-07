@@ -11,6 +11,7 @@
                 <field name="date_of_birth"/>
                 <field name="gender" string="Gender"/>
                 <field name="ref"/>
+                <field name="appointment"/>
             </tree>
         </field>
     </record>
@@ -31,6 +32,7 @@
                         <group>
                            <field name="gender"/>
                            <field name="ref"/>
+                           <field name="appointment"/>
                         </group>
                     </group>
                 </sheet>
