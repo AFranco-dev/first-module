@@ -10,7 +10,7 @@
         </field>
     </record>
     <!-- form view -->
-    <record id="hospital_patient_form_view" model="ir.ui.view">
+    <record id="hospital_appointment_form_view" model="ir.ui.view">
         <field name="name">hospital.appointment.form</field>
         <field name="model">hospital.appointment</field>
         <field name="arch" type="xml">
@@ -26,7 +26,7 @@
         </field>
     </record>
     <!-- SEARCH VIEW -->
-    <record id="hospital_patient_search_view" model="ir.ui.view">
+    <record id="hospital_appointment_search_view" model="ir.ui.view">
         <field name="name">hospital.appointment.search</field>
         <field name="model">hospital.appointment</field>
         <field name="arch" type="xml">
@@ -35,7 +35,7 @@
         </field>
     </record>
     <!-- PATIENT VIEW ACTION -->
-    <record id="hospital_patient_action" model="ir.actions.act_window">
+    <record id="hospital_appointment_action" model="ir.actions.act_window">
         <field name="name">Appointment Details</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.appointment</field>
