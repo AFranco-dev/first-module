@@ -9,4 +9,4 @@ class HospitalPatient(models.Model):
 
     patient_id = fields.Many2one(comodel_name='hospital.patient', string="Patient")
     appointment_time = fields.Datetime(string='Appointment Time')
-    booking_date = fields.Date(string='Appointment Date')
+    booking_date = fields.Date(string='Booking Date')
