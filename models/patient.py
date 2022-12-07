@@ -15,9 +15,10 @@ class HospitalPatient(models.Model):
     date_of_birth = fields.Date(string="Date Of Birth")
 
     def _compute_age(self):
-        today = date.today()
-        this_year_birthday = date(today.year, self.date_of_birth.month, self.date_of_birth.day)
-        if this_year_birthday < today:
-            self.age = today.year - self.date_of_birth.year
-        else:
-            self.age = today.year - self.date_of_birth.year - 1
+        for rec in self:
+            today = date.today()
+            this_year_birthday = date(today.year, rec.date_of_birth.month, rec.date_of_birth.day)
+            if this_year_birthday < today:
+                rec.age = today.year - rec.date_of_birth.year
+            else:
+                rec.age = today.year - rec.date_of_birth.year - 1
