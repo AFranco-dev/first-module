@@ -16,7 +16,7 @@ class HospitalPatient(models.Model):
 
     def _compute_age(self):
         for rec in self:
-            if rec == False or rec is None:
+            if rec.date_of_birth == False or rec is None:
                 rec.age = 0
             else:
                 today = date.today()
