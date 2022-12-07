@@ -14,6 +14,7 @@ class HospitalPatient(models.Model):
     active = fields.Boolean(string='Active', default=True)
     date_of_birth = fields.Date(string="Date Of Birth")
 
+    @api.depends('date_of_birth')
     def _compute_age(self):
         for rec in self:
             if rec.date_of_birth == False or rec is None:
