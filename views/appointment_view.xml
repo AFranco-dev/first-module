@@ -16,6 +16,9 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <group>
+                        <field name="patient_id"/>
+                    </group>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user"/>
@@ -34,7 +37,7 @@
             </search>
         </field>
     </record>
-    <!-- PATIENT VIEW ACTION -->
+    <!-- APPOINTMENT VIEW ACTION -->
     <record id="hospital_appointment_action" model="ir.actions.act_window">
         <field name="name">Appointment Details</field>
         <field name="type">ir.actions.act_window</field>
