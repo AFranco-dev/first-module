@@ -8,6 +8,7 @@
             <tree>
                 <field name="name" string="Patient Name"/>
                 <field name="age" string="Age"/>
+                <field name="date_of_birth"/>
                 <field name="gender" string="Gender"/>
                 <field name="ref"/>
             </tree>
@@ -24,6 +25,7 @@
                         <group>
                            <field name="name"/>
                            <field name="age"/>
+                           <field name="date_of_birth"/>
                            <field name="active" invisible="1"/>
                         </group>
                         <group>
