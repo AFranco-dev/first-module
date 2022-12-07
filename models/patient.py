@@ -18,6 +18,6 @@ class HospitalPatient(models.Model):
         today = date.today()
         this_year_birthday = date(today.year, self.date_of_birth.month, self.date_of_birth.day)
         if this_year_birthday < today:
-            self.age = today.year - self.date_of_birth
+            self.age = today.year - self.date_of_birth.year
         else:
-            self.age = today.year - self.date_of_birth - 1
+            self.age = today.year - self.date_of_birth.year - 1
